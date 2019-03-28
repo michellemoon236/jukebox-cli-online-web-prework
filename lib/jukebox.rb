@@ -22,7 +22,7 @@ end
 
 
 def list(my_songs)
-  my_songs.each.with_index(1)
+  my_songs.each.with_index(1) do |name, index|
     puts "#{index}. #{name}"
   end
 end
