@@ -57,10 +57,16 @@ def run(my_songs)
 until answer.downcase == "exit"
       if answer.downcase == "help"
        help
+           puts "Please enter a command:"
+    answer = gets.chomp
       elsif answer.downcase == "list"
         list(my_songs)
+            puts "Please enter a command:"
+    answer = gets.chomp
       elsif answer.downcase == "play"
         play(my_songs)
+            puts "Please enter a command:"
+    answer = gets.chomp
       else
         puts "Please enter a command:"
       end
