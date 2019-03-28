@@ -68,15 +68,3 @@ def run(my_songs)
       exit
 end
 end
-
-if answer.downcase =="help" || answer.downcase =="list" || answer.downcase =="play" || answer.downcase == "exit"
-      if answer.downcase = "help"
-      help
-     elsif answer.downcase ="list"
-        list
-      elsif answer.downcase = "play"
-        play
-      elsif answer.downcase = "exit"
-        exit_jukebox
-    
-end
