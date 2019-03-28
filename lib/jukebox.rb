@@ -70,8 +70,8 @@ until answer.downcase == "exit"
       else
         puts "Please enter a command:"
       end
+    end
     exit_jukebox
-end
 end
 
 
