@@ -38,8 +38,8 @@ def play(my_songs)
   #get the file path of the song by looking it up in the my_songs hash
   puts "Please enter a song name or number:"
   answer = gets.chomp
-  my_songs.each_with_index do |name, index|
-    if answer == (index+1).to_s || answer == name 
+  my_songs.each.with_index(1) do |name, index|
+    if answer == (index.to_s) || answer == name 
       puts "Playing #{name}"
     else 
       puts "Invalid input, please try again"
