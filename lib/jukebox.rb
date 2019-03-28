@@ -73,3 +73,11 @@ end
 
 
 until answer.downcase == "exit"
+     if answer.downcase == "help"
+       help
+     elsif answer.downcase == "list"
+        list(my_songs)
+      elsif answer.downcase == "play"
+        play(my_songs)
+      else
+        puts "Please enter a command:"
