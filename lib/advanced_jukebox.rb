@@ -26,6 +26,8 @@ end
 def list(my_songs)
   #this method is different! Collect the keys of the my_songs hash and 
   #list the songs by name
+  my_songs.each.with_index(1)
+    puts "#{index}. "
 end
 
 
