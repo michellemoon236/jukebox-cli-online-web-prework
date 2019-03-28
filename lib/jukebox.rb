@@ -56,15 +56,16 @@ def run(my_songs)
   loop do
     puts "Please enter a command:"
     answer = gets.chomp
-    break if answer.downcase =="help" || answer =="list" || answer =="play" || answer == "exit"
-      if answer = "help"
+    break if answer.downcase =="help" || answer.downcase =="list" || answer.downcase =="play" || answer.downcase == "exit"
+      if answer.downcase = "help"
       help
-     elsif answer="list"
+     elsif answer.downcase ="list"
         list
-      elsif answer = "play"
+      elsif answer.downcase = "play"
         play
-      elsif answer = "exit"
+      elsif answer.downcase = "exit"
         exit_jukebox
-  else
+end
+end
     
 end
