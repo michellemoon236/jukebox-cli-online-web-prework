@@ -40,10 +40,11 @@ def play(my_songs)
   answer = gets.chomp
   my_songs.each.with_index(1) do |name, index|
     if answer == index || answer == name 
-      puts ""
-  else
-    puts "Invalid input, please try again"
+      puts "Playing #{song}"
+    else 
+      puts "Invalid input, please try again"
   end
+end
 end
 
 def exit_jukebox
