@@ -70,3 +70,6 @@ def run(my_songs)
 
 end
 end
+
+
+until answer.downcase == "exit"
