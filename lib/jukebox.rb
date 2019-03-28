@@ -52,7 +52,6 @@ end
 
 def run(my_songs)
   #this method is the same as in jukebox.rb
-  help
     puts "Please enter a command:"
     answer = gets.chomp
 until answer.downcase == "exit"
