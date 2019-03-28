@@ -54,21 +54,21 @@ def run(my_songs)
   #this method is the same as in jukebox.rb
     puts "Please enter a command:"
     answer = gets.chomp
-until answer.downcase == "exit"
+    until answer.downcase == "exit"
       if answer.downcase == "help"
-       help
-           puts "Please enter a command:"
-    answer = gets.chomp
+          help
+          puts "Please enter a command:"
+          answer = gets.chomp
       elsif answer.downcase == "list"
-        list(my_songs)
-            puts "Please enter a command:"
-    answer = gets.chomp
+          list(my_songs)
+          puts "Please enter a command:"
+          answer = gets.chomp
       elsif answer.downcase == "play"
-        play(my_songs)
-            puts "Please enter a command:"
-    answer = gets.chomp
+          play(my_songs)
+          puts "Please enter a command:"
+          answer = gets.chomp
       else
-        puts "Please enter a command:"
+          puts "Please enter a command:"
       end
     end
     exit_jukebox
