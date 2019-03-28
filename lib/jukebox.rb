@@ -55,4 +55,9 @@ def run(my_songs)
   help
   put "Please enter a command:"
   answer = gets.chomp
+  if answer = "list"
+    list
+  elsif answer = "play"
+    play
+  elsif answer = 
 end
