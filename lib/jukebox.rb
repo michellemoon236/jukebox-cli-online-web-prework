@@ -40,7 +40,7 @@ def play(my_songs)
   answer = gets.chomp
   my_songs.each_with_index do |name, index|
     if answer == index+1 || answer == name 
-      puts "Playing #{song}"
+      puts "Playing #{name}"
     else 
       puts "Invalid input, please try again"
   end
