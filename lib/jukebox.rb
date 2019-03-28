@@ -65,6 +65,7 @@ def run(my_songs)
       elsif answer.downcase = "exit"
         exit_jukebox
       break if answer.downcase == "exit"
+      end
       exit
 end
 end
